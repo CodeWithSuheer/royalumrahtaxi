@@ -120,7 +120,7 @@ const BookTaxi = () => {
 
   return (
     <>
-      <section className="py-14 sm:py-16 px-5 sm:px-4 xl:px-0 bg-[#2A4D3E] text-white">
+      <section className="pt-16 pb-12 sm:pt-24 sm:pb-12 px-5 sm:px-4 xl:px-0 bg-[#2A4D3E] text-white">
         <div className="max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto">
           {/* HEADER */}
           <div className="header w-full max-w-4xl mx-auto text-center">
@@ -139,7 +139,7 @@ const BookTaxi = () => {
 
           {/* DATA */}
           <div className="data">
-            <div className="mt-8 sm:mt-12">
+            <div className="mt-8 sm:mt-10">
               {/* {!loading ? (
                 <> */}
               <Slider ref={sliderRef} {...settings}>

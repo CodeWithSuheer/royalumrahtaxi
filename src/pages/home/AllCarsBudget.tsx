@@ -26,7 +26,7 @@ const AllCarsBudget = () => {
     <>
       <section
         id="service"
-        className="py-14 sm:py-16 px-0 sm:px-4 xl:px-0 bg-white text-black"
+        className="pt-16 pb-12 sm:pt-24 sm:pb-12 px-0 sm:px-4 xl:px-0 bg-white text-black"
       >
         <div className="max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto">
           {/* HEADER */}

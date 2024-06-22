@@ -4,6 +4,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   const handleMoveToTop = () => {
@@ -61,13 +62,13 @@ const Footer = () => {
                 >
                   Contact Us
                 </Link>
-                <Link
-                  to="/privacy-policy"
-                  onClick={handleMoveToTop}
+                <HashLink
+                  to="/#reviews"
+                  smooth
                   className="transition-colors duration-300 hover:underline text-gray-100 hover:text-blue-500"
                 >
-                  Privacy Policy
-                </Link>
+                  Reviews
+                </HashLink>
               </div>
             </div>
 
@@ -77,24 +78,27 @@ const Footer = () => {
                 Useful Links
               </p>
               <div className="flex flex-col items-start mt-3 space-y-2">
-                <Link
-                  to="/service"
+                <HashLink
+                  to="/#services"
+                  smooth
                   className="transition-colors duration-300 hover:underline text-gray-100 hover:text-blue-500"
                 >
                   Services
-                </Link>
-                <Link
-                  to="/pricing"
+                </HashLink>
+                <HashLink
+                  to="/#pricing"
+                  smooth
                   className="transition-colors duration-300 hover:underline text-gray-100 hover:text-blue-500"
                 >
                   Pricing
-                </Link>
-                <Link
-                  to="/blogs"
+                </HashLink>
+                <HashLink
+                  to="/#faqs"
+                  smooth
                   className="transition-colors duration-300 hover:underline text-gray-100 hover:text-blue-500"
                 >
                   Faqs
-                </Link>
+                </HashLink>
               </div>
             </div>
 

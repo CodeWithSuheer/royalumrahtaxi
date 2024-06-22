@@ -17,8 +17,8 @@ const HomePage = () => {
       <section id="pricing"><AllCarsBudget /></section>
       <CtaOne />
       <Services />
-      <Review />
-      <Faq />
+      <section id="reviews"><Review /></section>
+      <section id="faqs"><Faq /></section>
       <Blogs />
     </>
   );

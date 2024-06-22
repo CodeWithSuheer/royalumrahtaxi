@@ -1,28 +1,28 @@
 const data = [
   {
     id: 1,
-    title: "How Much a taxi from Makkah airport to Madinah",
-    desc: "lorem20",
+    title: "How much does a taxi from Makkah airport to Madinah cost?",
+    desc: "The cost of a taxi from Makkah airport to Madinah varies depending on the type of vehicle and the time of travel. For an accurate quote, please contact our customer service team via phone or WhatsApp.",
   },
   {
     id: 2,
-    title: "How Much a taxi from Makkah airport to Madinah",
-    desc: "lorem20",
+    title: "How can I book a taxi?",
+    desc: "Booking a taxi with Royal Umrah Taxi is easy. You can book via phone or WhatsApp, and our team will assist you with the details and confirm your booking promptly.",
   },
   {
     id: 3,
-    title: "How Much a taxi from Makkah airport to Madinah",
-    desc: "lorem20",
+    title: "Are your drivers experienced and licensed?",
+    desc: "Yes, all our drivers are highly experienced and fully licensed. They are well-versed in the routes to ensure a safe and comfortable journey for you.",
   },
   {
     id: 4,
-    title: "How Much a taxi from Makkah airport to Madinah",
-    desc: "lorem20",
+    title: "What types of vehicles do you offer?",
+    desc: "We offer a range of vehicles to suit different needs and budgets, including sedans, SUVs, and luxury cars. All our vehicles are well-maintained and equipped with modern amenities.",
   },
   {
     id: 5,
-    title: "How Much a taxi from Makkah airport to Madinah",
-    desc: "lorem20",
+    title: "Can I make a last-minute booking?",
+    desc: "Yes, we strive to accommodate last-minute bookings whenever possible. Please contact us directly to check availability and arrange your ride.",
   },
 ];
 
@@ -38,12 +38,10 @@ const Faq = () => {
               Frequently Ask Questions?
             </h2>
 
-            <p className="mt-2 font-normal text-sm tracking-wide">
-              Lorem ipsum dolor sit amet consectetur. Id pellentesque lectus
-              nunc tincidunt magnis varius proin. Massa volutpat ac sit lectus
-              pretium augue est felis. Eu tellus odio vulputate tincidunt
-              elementum. Sed accumsan ut tellus eget id.Sed accumsan ut tellus
-              eget id.
+            <p className="mt-2 font-normal max-w-2xl mx-auto text-sm tracking-wide">
+              Have questions about our services? Here are some of the most
+              common questions we receive from our customers. If you don't find
+              the answer you're looking for, feel free to contact us directly.
             </p>
           </div>
         </div>
@@ -78,7 +76,7 @@ const Faq = () => {
                   </svg>
                 </summary>
 
-                <p className="mt-4 px-4 leading-relaxed text-black bg-white py-3 rounded-lg">
+                <p className="mt-4 px-4 text-sm leading-relaxed text-black bg-white py-3 rounded-lg">
                   {data.desc}
                 </p>
               </details>

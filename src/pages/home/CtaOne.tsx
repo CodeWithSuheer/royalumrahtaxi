@@ -14,12 +14,14 @@ const CtaOne = () => {
               Ensure a smooth and hassle-free ride to the holy sites with our
               trusted taxi service.
             </p>
-            <button
-              type="button"
-              className="crimson mt-8 px-8 py-2 text-lg bg-[#F0A202] hover:bg-[#f0a102de] text-white rounded-3xl mx-auto text-center"
-            >
-              Book a Ride
-            </button>
+            <div className="button mt-7">
+              <a
+                href="tel:+966-59-721-7918"
+                className="crimson bg-[#F0A202] hover:bg-[#f0a102de] text-lg text-white rounded-3xl px-6 py-2.5"
+              >
+                Book a Ride
+              </a>
+            </div>
           </div>
         </div>
       </section>
