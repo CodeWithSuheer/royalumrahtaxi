@@ -51,12 +51,13 @@ const About = () => {
                   Makkah To Madinah Taxi Fare
                 </h2>
                 <p className="mb-7 sm:mb-7 lg:mb-7 text-md max-w-full">
-                  At Googly, our mission is to revolutionize eyewear by
-                  combining exceptional design, superior quality, and unmatched
-                  comfort. We are dedicated to crafting eyewear that not only
-                  enhances your vision but also elevates your personal style.
-                  Our commitment to innovation and excellence drives us to
-                  continuously improve and set new standards in the industry.
+                  Traveling from Makkah to Madinah has never been easier. At
+                  Royal Umrah Taxi, we offer competitive and transparent taxi
+                  fares to ensure you have a comfortable journey without any
+                  hidden costs. Our services are designed to provide you with a
+                  seamless and stress-free experience, allowing you to focus on
+                  your spiritual journey. Contact us to get a detailed fare
+                  estimate and book your ride today.
                 </p>
                 <div className="button mt-4">
                   <Link
@@ -95,19 +96,20 @@ const About = () => {
             </div>
 
             {/* RIGHT SIDE */}
-            <div className="flex items-center py-5 md:py-0 sm:rounded-md bg-[#2A4D3E] px-3 sm:px-4 xl:px-0">
-              <div className="ml-2 lg:ml-10">
+            <div className="flex items-center py-8 md:py-0 sm:rounded-md bg-[#2A4D3E] px-3 sm:px-4 xl:px-0">
+              <div className="px-3 sm:px-8">
                 <h2 className="mt-3 Noto mb-1.5 sm:mb-3 text-2xl md:text-3xl font-semibold text-gray-100">
-                  Makkah To Madinah Taxi Fare
+                  Our Fleet
                 </h2>
                 <p className="mb-7 sm:mb-7 lg:mb-7 text-md max-w-full text-gray-100">
-                  At Googly, our vision is to redefine the eyewear industry
-                  through innovation and creativity. We aspire to be the leading
-                  brand in eyewear fashion, offering unique and stylish designs
-                  that cater to diverse tastes and preferences. Our goal is to
-                  blend cutting-edge technology with contemporary aesthetics,
-                  ensuring that our products not only improve vision but also
-                  make a bold fashion statement.
+                  At Royal Umrah Taxi, we take pride in offering a diverse fleet
+                  of vehicles to cater to all your travel needs. Whether you're
+                  looking for a budget-friendly option or a luxurious ride, our
+                  well-maintained and comfortable cars are at your service. Each
+                  vehicle is equipped with modern amenities to ensure a safe and
+                  pleasant journey from Makkah to Madinah. Choose from a range
+                  of sedans, SUVs, and premium cars to make your travel
+                  experience unforgettable.
                 </p>
                 <div className="button mt-4">
                   <Link
@@ -131,15 +133,19 @@ const About = () => {
             <div className="flex items-center">
               <div className="ml-2 sm:ml-0 mr-0 lg:mr-10">
                 <h2 className="mt-3 Noto mb-1.5 text-[#2A4D3E] sm:mb-3 text-2xl md:text-3xl font-semibold">
-                  Makkah To Madinah Taxi Fare
+                  Why Choose Us?
                 </h2>
                 <p className="mb-7 sm:mb-7 lg:mb-7 text-md max-w-full">
-                  At Googly, our mission is to revolutionize eyewear by
-                  combining exceptional design, superior quality, and unmatched
-                  comfort. We are dedicated to crafting eyewear that not only
-                  enhances your vision but also elevates your personal style.
-                  Our commitment to innovation and excellence drives us to
-                  continuously improve and set new standards in the industry.
+                  Choosing Royal Umrah Taxi means opting for reliability,
+                  comfort, and excellent service. Our drivers are professional,
+                  courteous, and knowledgeable, ensuring a smooth journey every
+                  time. We prioritize your safety and convenience, offering
+                  punctual pick-ups and drop-offs, and transparent pricing with
+                  no hidden costs. With a range of vehicles to suit every
+                  budget, we are committed to making your travel experience as
+                  pleasant and hassle-free as possible. Trust us to be your
+                  travel partner for your journeys from Makkah to Madinah and
+                  beyond.
                 </p>
                 <div className="button mt-4">
                   <Link
@@ -160,7 +166,7 @@ const About = () => {
             <div className="left_img group overflow-hidden">
               <img
                 className="transition duration-500 object-fill group-hover:scale-105 w-full"
-                src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Rectangle_3933.png?v=1718537848"
+                src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/Rectangle_3934.png?v=1718538392"
                 alt="image"
               />
             </div>

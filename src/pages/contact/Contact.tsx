@@ -1,50 +1,12 @@
-import { FormEvent, useState } from "react";
-import axios from "axios";
-import toast from "react-hot-toast";
 import "./Contact.css";
 // ICONS
 import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { MdPhone } from "react-icons/md";
-import { IoMail } from "react-icons/io5";
-import { MdLocationPin } from "react-icons/md";
+import { IoPricetagsOutline } from "react-icons/io5";
 import { IoIosArrowForward } from "react-icons/io";
+import { HashLink } from "react-router-hash-link";
 
 const Contact = () => {
-  const [loading, setLoading] = useState(false);
-  const [formdata, setFormdata] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  // HANDLE SUBMIT
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-
-    try {
-      const response = await axios.post(
-        "http://localhost:7000/api/contact/createContact",
-        formdata
-      );
-      if (response.status === 201) {
-        setFormdata({
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-        });
-        toast.success(response.data.msg);
-        setLoading(false);
-      }
-    } catch {
-      setLoading(false);
-      toast.error("Request Failed");
-    }
-  };
-
   return (
     <>
       <section className="contactSectionbg relative">
@@ -80,142 +42,113 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
-      <section id="here" className="pt-0 sm:pt-0 bg-white px-0 sm:px-4">
-        <div className="xl:max-w-6xl lg:max-w-5xl max-w-xl mx-auto min-h-screen flex items-center">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 w-full">
-            {/* --------------- LEFT --------------- */}
-            <div className="left px-4 sm:px-10 py-16 bg-[#2A4D3E] text-white">
-              <div className="content text-center lg:text-start">
-                <span className="letterSpacing py-1 px-1.5 font-medium text-white bg-[#F0A202] text-[11px] lg:text-[13px]">
-                  CONTACT
-                </span>
-
-                <h2 className="Noto mt-4 mb-6 text-4xl md:text-5xl font-medium text-white tracking-normal">
-                  Get In Touch
-                </h2>
-
-                <p className="text-gray-300 py-3">
-                  Have questions or need assistance? Our team is here to help!
-                  Reach out to us for any inquiries or support, and we'll get
-                  back to you promptly.
-                </p>
-
-                <div className="mt-6 space-y-8 md:mt-6 flex flex-col justify-center items-center sm:block">
-                  <p className="flex items-start">
-                    <MdPhone className="text-white size-9 p-2" />
-                    <a
-                      href="tel:+92 332 4700802"
-                      className="mt-1 mx-3 text-gray-300 tracking-wide"
-                    >
-                      +92 332 4700802
-                    </a>
-                  </p>
-
-                  <p className="flex items-start">
-                    <IoMail className="text-white size-9 p-2" />
-                    <span className="mx-3 mt-1 text-gray-300 text-wrap">
-                      royalumrahtaxi@gmail.com
-                    </span>
-                  </p>
-
-                  <p className="flex items-start">
-                    <MdLocationPin className="text-white size-9 p-2" />
-                    <span className="mx-3 mt-1 text-gray-300 text-wrap">
-                      2155 Briarwood Drive Camden, NJ 08102
-                    </span>
-                  </p>
-                </div>
-              </div>
+      <section className="bg-white">
+        <div className="max-w-5xl xl:max-w-6xl xxl:max-w-7xl mx-auto px-4 py-12">
+          <div className="grid grid-cols-1 gap-6 lg:col-span-2 sm:grid-cols-2">
+            {/* FIRST BOX */}
+            <div className="p-4 rounded-lg bg-[#2A4D3E] md:p-6">
+              <span className="inline-block p-3 text-[#F0A202] rounded-lg bg-[#41705b]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+              </span>
+              <h2 className="mt-4 text-base font-medium text-white">Email</h2>
+              <p className="mt-2 text-sm text-gray-50">
+                Email to our friendly team.
+              </p>
+              <p className="mt-2 text-md text-[#fdc554]">
+                royaltaxi089@gmail.com
+              </p>
             </div>
 
-            {/* --------------- RIGHT --------------- */}
-            <div className="right bg-[#F5F5F5] border border-gray-400">
-              <div className="w-full px-4 sm:px-10 py-10 mx-auto overflow-hidden rounded-lg shadow-2xl lg:max-w-xl">
-                <h2 className="playfair mt-2 pb-2 text-4xl font-bold text-black">
-                  Send A Message
-                </h2>
-                <p className="mt-2 text-black">
-                  Have something to say? Drop us a message and we’ll get back to
-                  you as soon as possible.
-                </p>
-                {/* FORM */}
-                <form className="mt-6" onSubmit={handleSubmit}>
-                  <div className="mb-4">
-                    <input
-                      className="block w-full px-3 py-3 mt-2 text-gray-700 placeholder-gray-700 bg-[#F7F7F7] border border-gray-500 rounded-md focus:outline-none focus:shadow-md"
-                      placeholder="Enter Full Name"
-                      type="text"
-                      value={formdata.name}
-                      onChange={(e) =>
-                        setFormdata({ ...formdata, name: e.target.value })
-                      }
-                      required
-                    />
-                  </div>
+            {/* SECOND BOX */}
+            <div className="p-4 rounded-lg bg-[#2A4D3E] md:p-6">
+              <span className="inline-block p-3 text-[#F0A202] rounded-lg bg-[#41705b]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-message-square"
+                >
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+              </span>
+              <h2 className="mt-4 text-base font-medium text-white">
+                WhatsApp us
+              </h2>
+              <p className="mt-2 text-sm text-gray-50">Chat to support</p>
+              <a
+                title="whatsapp"
+                href="https://api.whatsapp.com/send?phone=966597217918"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 text-sm text-[#fdc554]"
+              >
+                Start new chat
+              </a>
+            </div>
 
-                  <div className="mb-4">
-                    <input
-                      className="block w-full px-3 py-3 mt-2 text-gray-700 placeholder-gray-700 bg-[#F7F7F7] border border-gray-500 rounded-md focus:outline-none focus:shadow-md"
-                      placeholder="Enter Your Email Address"
-                      type="email"
-                      value={formdata.email}
-                      onChange={(e) =>
-                        setFormdata({ ...formdata, email: e.target.value })
-                      }
-                      required
-                    />
-                  </div>
+            {/* THIRD BOX */}
+            <div className="p-4 rounded-lg bg-[#2A4D3E] md:p-6">
+              <span className="inline-block p-3 text-[#F0A202] rounded-lg bg-[#41705b]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
+                </svg>
+              </span>
+              <h2 className="mt-4 text-base font-medium text-white">Call Us</h2>
+              <p className="mt-2 text-sm text-gray-50">24/7</p>
+              <p className="mt-2 text-md text-[#fdc554]">
+                <a
+                  href="tel:+966-59-721-7918"
+                  className="mt-2 text-md text-[#fdc554]"
+                >
+                  <span>+966 59 721 7918</span>
+                </a>
+              </p>
+            </div>
 
-                  <div className="mb-4">
-                    <input
-                      className="block w-full px-3 py-3 mt-2 text-gray-700 placeholder-gray-700 bg-[#F7F7F7] border border-gray-500 rounded-md focus:outline-none focus:shadow-md"
-                      placeholder="Enter Your Phone Number"
-                      type="number"
-                      value={formdata.phone}
-                      onChange={(e) =>
-                        setFormdata({ ...formdata, phone: e.target.value })
-                      }
-                      required
-                    />
-                  </div>
-
-                  <div className="w-full mt-4">
-                    <textarea
-                      className="block w-full px-3 py-3 mt-2 text-gray-700 placeholder-gray-700 bg-[#F7F7F7] border border-gray-500 rounded-md focus:outline-none focus:shadow-md"
-                      placeholder="Enter Your Message"
-                      value={formdata.message}
-                      onChange={(e) =>
-                        setFormdata({ ...formdata, message: e.target.value })
-                      }
-                    />
-                  </div>
-
-                  <div className="mt-5 flex justify-start items-center">
-                    {loading ? (
-                      <button
-                        type="button"
-                        className="h-11 px-10 w-full sm:max-w-40 bg-[#2A4D3E] text-white"
-                      >
-                        <div
-                          className="animate-spin inline-block w-5 h-5 border-[3px] border-current border-t-transparent text-white  rounded-full "
-                          role="status"
-                          aria-label="loading"
-                        >
-                          <span className="sr-only">Loading...</span>
-                        </div>
-                      </button>
-                    ) : (
-                      <button
-                        type="submit"
-                        className="h-11 px-10 w-full sm:max-w-40 hover:bg-black bg-[#2A4D3E] text-white"
-                      >
-                        Submit
-                      </button>
-                    )}
-                  </div>
-                </form>
-              </div>
+            {/* FORTH BOX */}
+            <div className="p-4 rounded-lg bg-[#2A4D3E] md:p-6">
+              <span className="inline-block p-3 text-[#F0A202] rounded-lg bg-[#41705b]">
+                <IoPricetagsOutline size={22} />
+              </span>
+              <h2 className="mt-4 text-base font-medium text-white">
+                Book Your Taxi Here!
+              </h2>
+              <p className="mt-2 text-sm text-gray-50">See Pricing</p>
+              <p className="mt-2 text-md text-[#fdc554]">
+                <HashLink to="/#pricing" smooth className="text-[#fdc554]">
+                  Pricing
+                </HashLink>
+              </p>
             </div>
           </div>
         </div>
