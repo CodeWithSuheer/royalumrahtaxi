@@ -6,7 +6,7 @@ import CtaOne from "./CtaOne";
 import Faq from "./Faq";
 import HeroSection from "./HeroSection";
 import Review from "./Review";
-import Services from "./Services";
+// import Services from "./Services";
 
 const HomePage = () => {
   return (
@@ -15,9 +15,9 @@ const HomePage = () => {
       <section id="services"><BookTaxi /></section>
       <section id="pricing"><AllCarsBudget /></section>
       <CtaOne />
-      <Services />
-      <section id="reviews"><Review /></section>
+      {/* <Services /> */}
       <Aboutus />
+      <section id="reviews"><Review /></section>
       <section id="faqs"><Faq /></section>
       <Blogs />
     </>
