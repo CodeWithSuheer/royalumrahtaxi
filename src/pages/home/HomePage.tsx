@@ -12,12 +12,12 @@ const HomePage = () => {
   return (
     <>
       <HeroSection />
-      <Aboutus />
       <section id="services"><BookTaxi /></section>
       <section id="pricing"><AllCarsBudget /></section>
       <CtaOne />
       <Services />
       <section id="reviews"><Review /></section>
+      <Aboutus />
       <section id="faqs"><Faq /></section>
       <Blogs />
     </>

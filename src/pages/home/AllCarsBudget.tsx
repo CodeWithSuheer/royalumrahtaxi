@@ -74,7 +74,7 @@ const AllCarsBudget = () => {
                     alt={selectedCar[0].name}
                   />
 
-                  <p className="mt-4 text-sm leading-5">
+                  <p className="mt-4 ml-2 text-md font-medium leading-5">
                     {selectedCar[0].name} - Seats: {selectedCar[0].seats}, Bags:{" "}
                     {selectedCar[0].bags}
                   </p>
