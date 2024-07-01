@@ -127,10 +127,10 @@ const Contact = () => {
               <p className="mt-2 text-sm text-gray-50">24/7</p>
               <p className="mt-2 text-md text-[#fdc554]">
                 <a
-                  href="tel:+966-59-721-7918"
+                  href="tel:+966-57-425-9637"
                   className="mt-2 text-md text-[#fdc554]"
                 >
-                  <span>+966 59 721 7918</span>
+                  <span>+966 57 425 9637</span>
                 </a>
               </p>
             </div>

@@ -131,13 +131,13 @@ const Header = () => {
           {/* BUTTON */}
           <div className="hidden md:inline-block">
             <a
-              href="tel:+966-59-721-7918"
+              href="tel:+966-57-425-9637"
               className="px-4 h-11 text-[0.95rem] font-medium flex items-center text-white border border-[#F0A202] bg-[#F0A202] rounded-[2rem] shadow cursor-pointer"
             >
               <span>
                 <MdPhoneInTalk size={20} />
               </span>
-              <span className="pl-2">+966 59 721 7918</span>
+              <span className="pl-2">+966 57 425 9637</span>
             </a>
           </div>
         </div>
