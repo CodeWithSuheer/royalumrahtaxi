@@ -95,7 +95,7 @@ const AllCarsBudget = () => {
                   {selectedCar[0].prices.map((data, index) => (
                     <div
                       key={index}
-                      className={`py-3 px-3 sm:px-5 flex justify-between items-center text-black ${
+                      className={`py-3 px-3 sm:px-5 flex justify-between items-center gap-x-2 text-black ${
                         index % 2 === 0 ? "bg-gray-200" : "bg-white"
                       }`}
                     >
@@ -108,8 +108,8 @@ const AllCarsBudget = () => {
                         )}
                         {data.to}
                       </h2>
-                      <h2 className="text-sm tracking-wider text-center font-medium">
-                        {data.price} SAR
+                      <h2 className="text-sm tracking-wider text-center flex flex-col sm:flex-row items-center gap-x-1 font-medium">
+                        {data.price} <span>SAR</span>
                       </h2>
                     </div>
                   ))}

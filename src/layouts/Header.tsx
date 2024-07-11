@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { MdPhoneInTalk } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import logo from "../assets/logo.webp";
 import "./Layouts.css";
 
 const Header = () => {
@@ -45,20 +46,11 @@ const Header = () => {
             {/* COMPANY LOGO */}
             <Link
               to="/"
-              onClick={() =>
-                window.scroll({
-                  top: 0,
-                  behavior: "smooth",
-                })
-              }
+              onClick={handleLinkClick}
               className="flex items-center"
             >
-              <img
-                className="w-11"
-                src="https://cdn.shopify.com/s/files/1/0704/6378/2946/files/royalumrahtaxiLogo.png?v=1718955881"
-                alt="logo"
-              />
-              <h2 className="crimson text-gray-50 py-1 text-xl font-semibold tracking-wide">
+              <img className="w-16" src={logo} alt="logo" />
+              <h2 className="crimson text-gray-50 py-0 text-lg sm:text-xl font-semibold tracking-wide">
                 Royal Umrah Taxi
               </h2>
             </Link>
@@ -118,7 +110,7 @@ const Header = () => {
               {isMobile && (
                 <li className="poppins text-white hover:text-gray-200">
                   <a
-                   href="tel:+966-59-721-7918"
+                    href="tel:+966-59-721-7918"
                     className="font-medium text-[1rem] lg:text-[1.05rem]"
                   >
                     <span className="">+966 59 721 7918</span>

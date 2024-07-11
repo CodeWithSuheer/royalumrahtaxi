@@ -12,20 +12,12 @@ const HeroSection = () => {
             {/* CONTENT */}
             <div className="flex items-center text-white">
               <div className="content">
-                {/* <h2 className="crimson pr-3 text-4xl sm:text-5xl font-semibold mb-5">
-                  Book Your Luxury Umrah Taxi Service at an Affordable Price
-                </h2> */}
                 <WordPullUp
                   className="crimson pr-3 text-4xl sm:text-5xl font-semibold mb-5"
                   words="Book Your Luxury Umrah Taxi Service at an Affordable Price"
                 />
-                {/* <p className="crimson mb-3 sm:text-md md:text-md xl:text-lg font-normal max-w-md">
-                  Enjoy a luxurious and comfortable journey to your Umrah. Our
-                  affordable taxi service is designed to provide you with the
-                  best experience. Book now and travel with ease.
-                </p> */}
 
-                <p>
+                <div>
                   <FadeText
                     className="crimson mb-3 sm:text-md md:text-md xl:text-lg font-normal max-w-md"
                     direction="right"
@@ -36,7 +28,7 @@ const HeroSection = () => {
                   affordable taxi service is designed to provide you with the
                   best experience. Book now and travel with ease."
                   />
-                </p>
+                </div>
 
                 <div className="button mt-7">
                   <Button />

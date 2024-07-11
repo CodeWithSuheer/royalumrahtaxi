@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
-import { Toaster } from "react-hot-toast";
 import HomePage from "./pages/home/HomePage";
 import NotFound from "./components/NotFound";
 import Header from "./layouts/Header";
-import Signup from "./auth/Signup";
-import Login from "./auth/Login";
 import Contact from "./pages/contact/Contact";
 import About from "./pages/about/About";
 import Footer from "./layouts/Footer";
@@ -66,10 +63,6 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<HomePage />} />
 
-          {/* ---------- AUTH ROUTES ---------- */}
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
-
           {/* ---------- OTHER ROUTES ---------- */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
@@ -101,7 +94,6 @@ function App() {
 
         <Footer />
       </BrowserRouter>
-      <Toaster />
     </>
   );
 }
