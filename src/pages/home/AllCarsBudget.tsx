@@ -18,7 +18,7 @@ const carData = {
 };
 
 const AllCarsBudget = () => {
-  const [selectedCar, setSelectedCar] = useState(camry);
+  const [selectedCar, setSelectedCar] = useState(toyotaHiroof);
 
   const handleCarSelection = (carName: string) => {
     setSelectedCar(carData[carName as keyof typeof carData]);
