@@ -5,10 +5,12 @@ import { gmcyukonxl } from "./AllCarsData";
 import { hyundaiStaria } from "./AllCarsData";
 import { coaster } from "./AllCarsData";
 import { bus } from "./AllCarsData";
+import { innova } from "./AllCarsData";
 
 const carData = {
-  CAMRY: camry,
   "TOYOTA HIROOF": toyotaHiroof,
+  INNOVA: innova,
+  CAMRY: camry,
   "GMC YUKON XL": gmcyukonxl,
   "HYUNDAI STARIA": hyundaiStaria,
   COASTER: coaster,

@@ -49,7 +49,7 @@ const Header = () => {
               onClick={handleLinkClick}
               className="flex items-center"
             >
-              <img className="w-16" src={logo} alt="logo" />
+              <img className="w-20" src={logo} alt="logo" />
               <h2 className="crimson text-gray-50 py-0 text-lg sm:text-xl font-semibold tracking-wide">
                 Royal Umrah Taxi
               </h2>

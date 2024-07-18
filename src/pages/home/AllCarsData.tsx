@@ -222,6 +222,98 @@ export const toyotaHiroof = [
   },
 ];
 
+export const innova = [
+  {
+    name: "INNOVA",
+    image:
+      "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/inova.png?v=1721288865",
+    seats: 7,
+    bags: 5,
+    prices: [
+      {
+        from: "Jeddah Airport",
+        to: "Makkah Hotel",
+        price: 300,
+      },
+      {
+        from: "Madina Ziarat",
+        to: "and Wadiya Jin",
+        price: 350,
+      },
+      {
+        from: "Makkah Hotel",
+        to: "Jeddah Airport",
+        price: 300,
+      },
+      {
+        from: "Madina Hotel",
+        to: "Makkah Hotel",
+        price: 500,
+      },
+      {
+        from: "Per Hour",
+        to: "Rates",
+        price: 100,
+      },
+      {
+        from: "Jeddah",
+        to: "Taif and Return",
+        price: 1100,
+      },
+      {
+        from: "Makkah",
+        to: "Taif and Return",
+        price: 550,
+      },
+      {
+        from: "Madina Ziyarat",
+        to: "",
+        price: 300,
+      },
+      {
+        from: "Madina Hotel",
+        to: "Madina Airport",
+        price: 150,
+      },
+      {
+        from: "Makkah Ziyarat",
+        to: "",
+        price: 300,
+      },
+      {
+        from: "Madina Airport",
+        to: "Madina Hotel",
+        price: 150,
+      },
+      {
+        from: "Jeddah Airport",
+        to: "Madina Hotel",
+        price: 500,
+      },
+      {
+        from: "Makkah Hotel",
+        to: "Madina Hotel",
+        price: 500,
+      },
+      {
+        from: "Jeddah Airport",
+        to: "Jeddah Hotel",
+        price: 200,
+      },
+      {
+        from: "Jeddah Hotel",
+        to: "Jeddah Airport",
+        price: 200,
+      },
+      {
+        from: "Madina Hotel",
+        to: "Jeddah Airport",
+        price: 500,
+      },
+    ],
+  },
+];
+
 export const gmcyukonxl = [
   {
     name: "GMC YUKON XL",

@@ -22,6 +22,14 @@ const allCars: Car[] = [
   },
   {
     id: 2,
+    name: "INNOVA",
+    persons: 7,
+    bags: 5,
+    image:
+      "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/inova.png?v=1721288865",
+  },
+  {
+    id: 3,
     name: "TOYOTA HIROOF",
     persons: 12,
     bags: 15,
@@ -29,7 +37,7 @@ const allCars: Car[] = [
       "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/TOYOTA.png?v=1719089688",
   },
   {
-    id: 3,
+    id: 4,
     name: "GMC YUKON XL",
     persons: 7,
     bags: 8,
@@ -37,7 +45,7 @@ const allCars: Car[] = [
       "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/GMC_YUKON_XL.png?v=1719089691",
   },
   {
-    id: 4,
+    id: 5,
     name: "HYUNDAI STARIA",
     persons: 7,
     bags: 9,
@@ -45,7 +53,7 @@ const allCars: Car[] = [
       "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/image_2_2f5556a7-9dd4-4dc5-bb5e-664ae70dff38.png?v=1717873779",
   },
   {
-    id: 5,
+    id: 6,
     name: "COASTER",
     persons: 15,
     bags: 20,
@@ -53,7 +61,7 @@ const allCars: Car[] = [
       "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/COASTER.png?v=1719089688",
   },
   {
-    id: 6,
+    id: 7,
     name: "BUS",
     persons: 49,
     bags: 50,
