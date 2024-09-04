@@ -96,7 +96,7 @@ const Contact = () => {
               <p className="mt-2 text-sm text-gray-50">Chat to support</p>
               <a
                 title="whatsapp"
-                href="https://api.whatsapp.com/send?phone=966597217918"
+                href="https://api.whatsapp.com/send?phone=966563345962"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2 text-sm text-[#fdc554]"
@@ -127,10 +127,10 @@ const Contact = () => {
               <p className="mt-2 text-sm text-gray-50">24/7</p>
               <p className="mt-2 text-md text-[#fdc554]">
                 <a
-                  href="tel:+966-57-425-9637"
+                  href="tel:+966-56-334-5962"
                   className="mt-2 text-md text-[#fdc554]"
                 >
-                  <span>+966 57 425 9637</span>
+                  <span>+966 56 334 5962</span>
                 </a>
               </p>
             </div>

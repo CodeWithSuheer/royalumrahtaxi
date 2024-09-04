@@ -110,10 +110,11 @@ const Footer = () => {
               <div className="flex flex-col items-start mt-3 space-y-2">
                 {/* PHONE NUMBER */}
                 <a
-                  href="tel:+966-57-425-9637"
+                  href="tel:+966-56-334-5962"
                   className="flex items-center gap-2"
                 >
-                  <FaPhone /> +966 57 425 9637
+                  <FaPhone />
+                  +966 56 334 5962
                 </a>
 
                 <p className="flex items-start -mx-2">

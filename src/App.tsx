@@ -84,7 +84,7 @@ function App() {
 
         <a
           title="whatsapp"
-          href="https://api.whatsapp.com/send?phone=966574259637"
+          href="https://api.whatsapp.com/send?phone=966563345962"
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-btn flex items-center gap-2 rounded-full p-2 sm:p-3"
